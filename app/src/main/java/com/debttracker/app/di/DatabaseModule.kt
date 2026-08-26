@@ -25,7 +25,7 @@ object DatabaseModule {
             context,
             DebtDatabase::class.java,
             DATABASE_NAME
-        ).build()
+        ).fallbackToDestructiveMigration().build()
 
     @Provides
     fun provideContactDao(database: DebtDatabase): ContactDao = database.contactDao()
