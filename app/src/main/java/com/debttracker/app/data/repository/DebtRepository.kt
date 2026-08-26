@@ -8,6 +8,7 @@ import com.debttracker.app.data.local.dao.ContactDao
 import com.debttracker.app.data.local.dao.TransactionDao
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
+import javax.inject.Singleton
 import kotlinx.coroutines.flow.map
 
 @Singleton
