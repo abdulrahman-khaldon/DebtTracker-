@@ -12,3 +12,4 @@ app/build
 .zcode/
 .vscode/
 *.apk
+.kotlin/

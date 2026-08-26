@@ -11,7 +11,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class DebtRepository @Inject constructor(
+open class DebtRepository @Inject constructor(
     private val contactDao: ContactDao,
     private val transactionDao: TransactionDao
 ) {
@@ -53,9 +53,9 @@ class DebtRepository @Inject constructor(
     suspend fun settleAllForContact(contactId: Long) =
         transactionDao.settleAllForContact(contactId)
 
-    suspend fun getAllContactsOnce(): List<ContactEntity> = contactDao.getAllOnce()
+    open suspend fun getAllContactsOnce(): List<ContactEntity> = contactDao.getAllOnce()
 
-    suspend fun getAllTransactionsOnce(): List<TransactionEntity> = transactionDao.getAllOnce()
+    open suspend fun getAllTransactionsOnce(): List<TransactionEntity> = transactionDao.getAllOnce()
 
     suspend fun clearAll() {
         transactionDao.deleteAll()

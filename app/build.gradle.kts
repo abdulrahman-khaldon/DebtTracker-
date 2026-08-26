@@ -25,6 +25,7 @@ android {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
+            signingConfig = signingConfigs.getByName("debug")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -76,5 +77,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.google.material)
 
+    testImplementation(libs.junit)
+    testImplementation(libs.org.hamcrest)
     debugImplementation(libs.androidx.compose.ui.tooling)
 }

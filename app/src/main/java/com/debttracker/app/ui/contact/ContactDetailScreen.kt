@@ -35,7 +35,7 @@ import androidx.compose.material.icons.filled.ArrowUpward
 import androidx.compose.material.icons.filled.Done
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Phone
-import androidx.compose.material.icons.filled.ReceiptLong
+import androidx.compose.material.icons.automirrored.filled.ReceiptLong
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -360,7 +360,7 @@ private fun HistoryTab(
         ) {
             Spacer(Modifier.height(24.dp))
             EmptyState(
-                icon = Icons.Default.ReceiptLong,
+                icon = Icons.AutoMirrored.Filled.ReceiptLong,
                 title = stringResource(R.string.empty_transactions_title),
                 message = stringResource(R.string.empty_transactions_message)
             )
