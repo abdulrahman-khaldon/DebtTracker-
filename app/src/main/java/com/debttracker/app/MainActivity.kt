@@ -15,7 +15,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -41,19 +41,17 @@ class MainActivity : ComponentActivity() {
 }
 
 /**
- * Root composable: wraps the whole app in a locale-overridden context so the
- * in-app language switch (Arabic/English) applies instantly without restarting
- * the activity, and sets the layout direction to match the selected language.
+ * Root composable: applies language, layout direction, and dark mode theme.
  */
 @Composable
 private fun DebtTrackerApp(settings: AppSettings) {
-    val activityContext = LocalContext.current
     val locale = settings.language.locale
+    val currentConfig = LocalConfiguration.current
 
-    val localeContext = remember(locale) {
-        val configuration = Configuration(activityContext.resources.configuration)
-        configuration.setLocale(locale)
-        activityContext.createConfigurationContext(configuration)
+    val localeConfig = remember(locale, currentConfig) {
+        Configuration(currentConfig).apply {
+            setLocale(locale)
+        }
     }
 
     val darkTheme = settings.darkModeOverride ?: isSystemInDarkTheme()
@@ -63,16 +61,18 @@ private fun DebtTrackerApp(settings: AppSettings) {
         LayoutDirection.Ltr
     }
 
-    CompositionLocalProvider(LocalContext provides localeContext) {
+    CompositionLocalProvider(
+        LocalConfiguration provides localeConfig,
+        LocalLayoutDirection provides layoutDirection
+    ) {
         DebtTrackerTheme(darkTheme = darkTheme) {
-            CompositionLocalProvider(LocalLayoutDirection provides layoutDirection) {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    AppNavHost()
-                }
+            Surface(
+                modifier = Modifier.fillMaxSize(),
+                color = MaterialTheme.colorScheme.background
+            ) {
+                AppNavHost()
             }
         }
     }
 }
+

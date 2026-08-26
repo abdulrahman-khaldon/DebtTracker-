@@ -8,7 +8,7 @@ import com.debttracker.app.data.local.dao.ContactDao
 import com.debttracker.app.data.local.dao.TransactionDao
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
-import javax.inject.Singleton
+import kotlinx.coroutines.flow.map
 
 @Singleton
 open class DebtRepository @Inject constructor(
@@ -19,6 +19,7 @@ open class DebtRepository @Inject constructor(
     val contactsWithBalance: Flow<List<ContactWithBalance>> = contactDao.getContactsWithBalance()
 
     val globalTotals: Flow<GlobalTotals> = transactionDao.getGlobalTotals()
+        .map { it ?: GlobalTotals(0.0, 0.0) }
 
     fun contactWithBalance(contactId: Long): Flow<ContactWithBalance?> =
         contactDao.getContactWithBalance(contactId)

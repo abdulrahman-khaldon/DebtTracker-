@@ -54,5 +54,5 @@ interface TransactionDao {
         )
         """
     )
-    fun getGlobalTotals(): Flow<GlobalTotals>
+    fun getGlobalTotals(): Flow<GlobalTotals?>
 }
