@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تتبع الديون</string>
+    <string name="currency_symbol">ر.ي</string>
+
+    <!-- Common -->
+    <string name="ok">حسناً</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_add">إضافة</string>
+    <string name="cd_back">رجوع</string>
+    <string name="cd_settings">الإعدادات</string>
+    <string name="cd_add">إضافة</string>
+    <string name="cd_edit">تعديل</string>
+    <string name="cd_delete">حذف</string>
+    <string name="cd_call">اتصال</string>
+
+    <!-- Home -->
+    <string name="title_home">تتبع الديون</string>
+    <string name="total_owed_to_me">لي عند الناس</string>
+    <string name="total_i_owe">عليّ للناس</string>
+    <string name="net_balance">الرصيد الصافي</string>
+    <string name="cd_add_contact">إضافة شخص</string>
+    <string name="last_transaction_date">آخر معاملة: %1$s</string>
+    <string name="no_transactions_yet">لا معاملات بعد</string>
+    <string name="empty_contacts_title">لا يوجد أحد بعد</string>
+    <string name="empty_contacts_message">أضف شخصاً وابدأ بتسجيل الديون بينكما</string>
+    <string name="empty_contacts_action">إضافة أول شخص</string>
+    <string name="delete_contact_title">حذف الشخص؟</string>
+    <string name="delete_contact_message">سيتم حذف «%1$s» وجميع معاملاته نهائياً.</string>
+
+    <!-- Add / Edit contact -->
+    <string name="add_contact_title">إضافة شخص</string>
+    <string name="edit_contact_title">تعديل البيانات</string>
+    <string name="field_name">الاسم</string>
+    <string name="field_name_required">الاسم مطلوب</string>
+    <string name="field_phone">رقم الهاتف (اختياري)</string>
+
+    <!-- Contact detail -->
+    <string name="transactions_tab">السجل</string>
+    <string name="add_transaction_tab">معاملة جديدة</string>
+    <string name="type_credit">لي عليه</string>
+    <string name="type_debt">له عليّ</string>
+    <string name="field_amount">المبلغ</string>
+    <string name="error_invalid_amount">أدخل مبلغاً صحيحاً</string>
+    <string name="field_date">التاريخ</string>
+    <string name="field_notes">ملاحظات (اختياري)</string>
+    <string name="pick_date">اختر التاريخ</string>
+    <string name="message_transaction_added">تمت إضافة المعاملة</string>
+    <string name="message_transaction_updated">تم حفظ التعديلات</string>
+    <string name="message_transaction_deleted">تم حذف المعاملة</string>
+    <string name="edit_transaction_title">تعديل المعاملة</string>
+    <string name="delete_transaction_title">حذف المعاملة؟</string>
+    <string name="delete_transaction_message">لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="settle_all">تسوية الكل</string>
+    <string name="settle_all_title">تسوية جميع الديون؟</string>
+    <string name="settle_all_message">ستُعلَّم كل معاملات «%1$s» كمُسوّاة ويصبح الرصيد صفراً. يبقى السجل محفوظاً.</string>
+    <string name="settled_badge">تمت التسوية</string>
+    <string name="owes_you">مدين لك</string>
+    <string name="you_owe">تدين له</string>
+    <string name="nothing_between_you">لا ديون بينكما</string>
+    <string name="no_phone">لا يوجد رقم</string>
+    <string name="empty_transactions_title">لا معاملات بعد</string>
+    <string name="empty_transactions_message">أضف معاملة من تبويب «معاملة جديدة»</string>
+
+    <!-- Settings -->
+    <string name="title_settings">الإعدادات</string>
+    <string name="section_appearance">المظهر</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="dark_mode_hint">افتراضياً حسب إعداد النظام</string>
+    <string name="language">اللغة</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_english">English</string>
+    <string name="section_data">البيانات</string>
+    <string name="export_csv">تصدير البيانات (CSV)</string>
+    <string name="export_csv_hint">حفظ جميع الأشخاص والمعاملات في ملف CSV</string>
+    <string name="message_export_success">تم التصدير بنجاح</string>
+    <string name="message_export_failed">حدث خطأ أثناء التصدير</string>
+    <string name="clear_data">مسح جميع البيانات</string>
+    <string name="clear_data_hint">حذف نهائي لكل الأشخاص والمعاملات</string>
+    <string name="clear_data_title">مسح جميع البيانات؟</string>
+    <string name="clear_data_message">سيتم حذف كل شيء نهائياً ولا يمكن التراجع.</string>
+    <string name="message_data_cleared">تم مسح البيانات</string>
+    <string name="section_about">حول التطبيق</string>
+    <string name="about_app_description">تطبيق بسيط لتتبع الديون بينك وبين أصدقائك ومعارفك. يعمل بدون إنترنت وبياناتك تبقى على جهازك.</string>
+    <string name="version">الإصدار</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Coin: white ring -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,33 A21,21 0 1,1 53.99,33 Z M54,37.5 A16.5,16.5 0 1,0 54.01,37.5 Z"
+        android:fillType="evenOdd" />
+
+    <!-- Coin: inner dot -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,50.5 A3.5,3.5 0 1,1 53.99,50.5 Z" />
+
+    <!-- Plus sign (bottom right of coin) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M63.5,66 h17 v4.5 h-17 Z M69.75,59.75 h4.5 v17 h-4.5 Z" />
+</vector>

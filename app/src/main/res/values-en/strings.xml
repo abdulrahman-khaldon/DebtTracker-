@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DebtTracker</string>
+    <string name="currency_symbol">YER</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Add</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_add">Add</string>
+    <string name="cd_edit">Edit</string>
+    <string name="cd_delete">Delete</string>
+    <string name="cd_call">Call</string>
+
+    <!-- Home -->
+    <string name="title_home">DebtTracker</string>
+    <string name="total_owed_to_me">Owed to me</string>
+    <string name="total_i_owe">I owe</string>
+    <string name="net_balance">Net balance</string>
+    <string name="cd_add_contact">Add contact</string>
+    <string name="last_transaction_date">Last: %1$s</string>
+    <string name="no_transactions_yet">No transactions yet</string>
+    <string name="empty_contacts_title">Nobody here yet</string>
+    <string name="empty_contacts_message">Add a contact to start tracking debts</string>
+    <string name="empty_contacts_action">Add first contact</string>
+    <string name="delete_contact_title">Delete contact?</string>
+    <string name="delete_contact_message">“%1$s” and all their transactions will be permanently deleted.</string>
+
+    <!-- Add / Edit contact -->
+    <string name="add_contact_title">Add contact</string>
+    <string name="edit_contact_title">Edit contact</string>
+    <string name="field_name">Name</string>
+    <string name="field_name_required">Name is required</string>
+    <string name="field_phone">Phone number (optional)</string>
+
+    <!-- Contact detail -->
+    <string name="transactions_tab">History</string>
+    <string name="add_transaction_tab">New</string>
+    <string name="type_credit">They owe me</string>
+    <string name="type_debt">I owe them</string>
+    <string name="field_amount">Amount</string>
+    <string name="error_invalid_amount">Enter a valid amount</string>
+    <string name="field_date">Date</string>
+    <string name="field_notes">Notes (optional)</string>
+    <string name="pick_date">Select date</string>
+    <string name="message_transaction_added">Transaction added</string>
+    <string name="message_transaction_updated">Changes saved</string>
+    <string name="message_transaction_deleted">Transaction deleted</string>
+    <string name="edit_transaction_title">Edit transaction</string>
+    <string name="delete_transaction_title">Delete transaction?</string>
+    <string name="delete_transaction_message">This action cannot be undone.</string>
+    <string name="settle_all">Settle all</string>
+    <string name="settle_all_title">Settle all debts?</string>
+    <string name="settle_all_message">All of “%1$s”’s transactions will be marked as settled and the balance becomes zero. The history is kept.</string>
+    <string name="settled_badge">Settled</string>
+    <string name="owes_you">Owes you</string>
+    <string name="you_owe">You owe</string>
+    <string name="nothing_between_you">No debts between you</string>
+    <string name="no_phone">No phone number</string>
+    <string name="empty_transactions_title">No transactions yet</string>
+    <string name="empty_transactions_message">Add one from the “New” tab</string>
+
+    <!-- Settings -->
+    <string name="title_settings">Settings</string>
+    <string name="section_appearance">Appearance</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="dark_mode_hint">Follows the system setting by default</string>
+    <string name="language">Language</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_english">English</string>
+    <string name="section_data">Data</string>
+    <string name="export_csv">Export data (CSV)</string>
+    <string name="export_csv_hint">Save all contacts and transactions to a CSV file</string>
+    <string name="message_export_success">Exported successfully</string>
+    <string name="message_export_failed">Export failed</string>
+    <string name="clear_data">Clear all data</string>
+    <string name="clear_data_hint">Permanently delete all contacts and transactions</string>
+    <string name="clear_data_title">Clear all data?</string>
+    <string name="clear_data_message">Everything will be permanently deleted. This cannot be undone.</string>
+    <string name="message_data_cleared">Data cleared</string>
+    <string name="section_about">About</string>
+    <string name="about_app_description">A simple app for tracking debts between you and the people you know. Works offline and your data never leaves your device.</string>
+    <string name="version">Version</string>
+</resources>
