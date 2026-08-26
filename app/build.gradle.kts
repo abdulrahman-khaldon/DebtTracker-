@@ -74,6 +74,7 @@ dependencies {
 
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.google.material)
 
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
